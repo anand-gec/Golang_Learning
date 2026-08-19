@@ -24,3 +24,10 @@ func Multi(x, y int) int {
 	fmt.Println(multi)
 	return multi
 }
+
+func Div(x, y float64) (float64, error) {
+	if x == 0 || y == 0 {
+		return 0, fmt.Errorf("You are putting zero in element")
+	}
+	return x / y, nil
+}

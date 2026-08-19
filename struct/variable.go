@@ -24,4 +24,9 @@ func main() {
 	files.Add(2, 3)
 	files.Multi(4, 2)
 
+	ans, err := files.Div(4, 8)
+	if err != nil {
+		fmt.Println(err)
+	}
+	fmt.Println(ans)
 }
