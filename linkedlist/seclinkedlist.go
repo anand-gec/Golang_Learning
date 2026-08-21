@@ -12,12 +12,15 @@ type linkedList2 struct {
 	length int
 }
 
+//to store
 func (l *linkedList2) prepend(n *node) {
 	second := l.head
 	l.head = n
 	l.head.next = second
 	l.length++
 }
+
+//display 
 func (l linkedList2) printListData() {
 	toPrint := l.head
 	for l.length != 0 {
@@ -28,6 +31,7 @@ func (l linkedList2) printListData() {
 	fmt.Printf("\n")
 }
 
+//delete
 func (l *linkedList2) deleteWithValue(value int) {
 	if l.length==0{
 return
